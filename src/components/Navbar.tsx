@@ -3,10 +3,8 @@ import { Menu, X } from "lucide-react";
 import acesLogo from "@/assets/aces-logo.png";
 
 const navLinks = [
-  { label: "About", href: "#about" },
   { label: "Events", href: "#tech-events" },
   { label: "Rules", href: "#rules" },
-  { label: "Prizes", href: "#prizes" },
   { label: "Details", href: "#details" },
 ];
 
