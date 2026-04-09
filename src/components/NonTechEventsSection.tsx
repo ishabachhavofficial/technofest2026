@@ -1,4 +1,4 @@
-import { Film, Megaphone, Gamepad2, Flame, Trophy } from "lucide-react";
+import { Film, Megaphone, Gamepad2 } from "lucide-react";
 import EventCard from "./EventCard";
 
 const nonTechEvents = [
@@ -6,31 +6,19 @@ const nonTechEvents = [
     title: "Video Editing",
     description: "Create a compelling video under 2 minutes. Show your storytelling and editing prowess. Individual or team of 2.",
     icon: Film,
-    enrollLink: "https://docs.google.com/forms/d/e/1FAIpQLSfm7HZUHt_xYTlwQHR07Etqi3nxsBvuZk41K81BxImG18lxbg/viewform?usp=header",
+    enrollLink: "https://docs.google.com/forms/d/e/1FAIpQLScOgbYqu67z08vk7e01LT8kCrxCghSY9ldvW5-QcuCGUeKp7Q/viewform?usp=publish-editor",
   },
   {
     title: "Ad Making (Mad Ads)",
     description: "Form a team of 2–4 and create a hilarious, creative ad on the spot. Props allowed — bring your A-game!",
     icon: Megaphone,
-    enrollLink: "https://docs.google.com/forms/d/e/1FAIpQLSdfGCRE8THuBySChg2lVGav4jUNM2HPZRTVwv8KdiOMGgkUZQ/viewform?usp=header",
+    enrollLink: "https://docs.google.com/forms/d/e/1FAIpQLSfcVUtQPGvM3y49oluXUUVJIdbe02_Of1XBgdczQz4YEeIQIA/viewform?usp=header",
   },
   {
-    title: "BGMI",
-    description: "Squad up with your 4-member team and battle it out in classic custom rooms. Top ranks and kills earn you points!",
+    title: "Game Zone",
+    description: "BGMI, Free Fire & Fall Guys — Squad up with your team and battle it out! Points based on rank, kills, and survival.",
     icon: Gamepad2,
-    enrollLink: "https://docs.google.com/forms/d/e/1FAIpQLScOgbYqu67z08vk7e01LT8kCrxCghSY9ldvW5-QcuCGUeKp7Q/viewform?usp=publish-editor",
-  },
-  {
-    title: "Free Fire",
-    description: "Assemble your 4-member squad and fight for survival in custom rooms. Points for survival rank and kills!",
-    icon: Flame,
-    enrollLink: "https://docs.google.com/forms/d/e/1FAIpQLScOgbYqu67z08vk7e01LT8kCrxCghSY9ldvW5-QcuCGUeKp7Q/viewform?usp=publish-editor",
-  },
-  {
-    title: "Fall Guys",
-    description: "Race, jump, and tumble through wacky obstacle courses. Last one standing wins the crown!",
-    icon: Trophy,
-    enrollLink: "https://docs.google.com/forms/d/e/1FAIpQLScOgbYqu67z08vk7e01LT8kCrxCghSY9ldvW5-QcuCGUeKp7Q/viewform?usp=publish-editor",
+    enrollLink: "https://docs.google.com/forms/d/e/1FAIpQLScHYfIOzVAUL3ceT32396WwrlqQVVy2I-CnHpnA00sTzk1H-Q/viewform?usp=publish-editor",
   },
 ];
 
@@ -43,7 +31,7 @@ const NonTechEventsSection = () => {
           <span className="text-foreground">Events</span>
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {nonTechEvents.map((e) => (
             <EventCard key={e.title} {...e} accentColor="purple" />
           ))}
